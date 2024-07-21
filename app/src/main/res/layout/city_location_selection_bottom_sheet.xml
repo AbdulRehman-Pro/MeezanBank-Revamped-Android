@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgotscreen_rounded_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".beforeAuth.fragments.localeFragment.CityLocationSelectionBottomSheet">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Meezan Bank Locator"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:fontFamily="@font/muli_black" />
+
+        <EditText
+            android:id="@+id/searchCityET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/search_bg"
+            android:drawableEnd="@drawable/search_bg_end"
+            android:fontFamily="@font/muli_semibold"
+            android:hint="Search Your City..."
+            android:paddingStart="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarSize="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popularCityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Popular Citites"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontFamily="@font/muli_black" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularCityRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popularCityTitle"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbarSize="0dp"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/otherCityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/popularCityRV"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Other Citites"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:fontFamily="@font/muli_black" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/otherCityRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherCityTitle"
+                android:fadingEdge="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_150sdp"
+                android:fadingEdgeLength="@dimen/_30sdp"
+                tools:listitem="@layout/item_other_cities"
+                android:requiresFadingEdge="vertical"
+                android:scrollbarSize="0dp"
+                android:scrollbars="vertical" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/dialog_rounded_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/muli_black"
+        android:text="Sort By"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:background="@color/purple" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupSort"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/sortNearBy"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sortNearBy"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@android:color/transparent"
+                android:drawableTop="@drawable/ic_user"
+                android:drawableTint="@drawable/custom_radio_text"
+                android:fontFamily="@font/muli_black"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Nearby"
+                android:textAlignment="center"
+                android:textColor="@drawable/custom_radio_text"
+                android:textSize="@dimen/_10sdp" />
+
+            <RadioButton
+                android:id="@+id/sortAlphabetical"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@android:color/transparent"
+                android:drawableTop="@drawable/ic_user"
+                android:drawableTint="@drawable/custom_radio_text"
+                android:fontFamily="@font/muli_black"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Alphabetical"
+                android:textAlignment="center"
+                android:textColor="@drawable/custom_radio_text"
+                android:textSize="@dimen/_10sdp" />
+
+        </RadioGroup>
+
+
+</LinearLayout>

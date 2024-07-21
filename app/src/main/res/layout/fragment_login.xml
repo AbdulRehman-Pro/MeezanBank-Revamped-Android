@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".beforeAuth.fragments.LoginFragment">
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/splash_bg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:fontFamily="@font/muli_black"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_26sdp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:hint="Username"
+        android:textColorHint="@color/purple"
+        android:theme="@style/TextInputLayoutAppearance"
+        app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+        app:boxCornerRadiusTopStart="@dimen/_5sdp"
+        app:boxStrokeColor="@color/purple"
+        app:boxStrokeErrorColor="@color/errorColor"
+        app:boxStrokeWidthFocused="@dimen/_2sdp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/purple"
+        app:errorIconTint="@color/errorColor"
+        app:errorTextColor="@color/errorColor"
+        app:hintTextColor="@color/purple"
+        app:startIconDrawable="@drawable/ic_user"
+        app:startIconTint="@color/purple">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muli_semibold"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/rememberUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:fontFamily="@font/muli_black"
+        android:padding="0dp"
+        android:text="Remember Username"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/forgotUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/muli_black"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Forgot Username"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotUsername"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:hint="Password"
+        android:textColorHint="@color/purple"
+        android:theme="@style/TextInputLayoutAppearance"
+        app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+        app:boxCornerRadiusTopStart="@dimen/_5sdp"
+        app:boxStrokeColor="@color/purple"
+        app:boxStrokeErrorColor="@color/errorColor"
+        app:boxStrokeWidthFocused="@dimen/_2sdp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/purple"
+        app:errorIconTint="@color/errorColor"
+        app:errorTextColor="@color/errorColor"
+        app:hintTextColor="@color/purple"
+        app:startIconDrawable="@drawable/ic_password"
+        app:startIconTint="@color/purple">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muli_semibold"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/muli_black"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Forgot Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/touchID"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:elevation="@dimen/_6sdp"
+        app:cardBackgroundColor="@color/light_purple"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/fingerprint_meezan" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/touchID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/muli_black"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Login with\nTouchID"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        android:translationZ="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/userLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/purple"
+            android:elevation="@dimen/_8sdp"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_12sdp"
+            android:text="login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/userRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/light_purple"
+            android:elevation="@dimen/_8sdp"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_12sdp"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+</RelativeLayout>

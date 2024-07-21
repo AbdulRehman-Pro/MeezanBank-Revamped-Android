@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".beforeAuth.fragments.HomeRemittanceFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/muli_black"
+        android:text="Home Remittance Tracker"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/remittance_code"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="Remittance Code"
+            android:textColorHint="@color/purple"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeErrorColor="@color/errorColor"
+            app:boxStrokeWidthFocused="@dimen/_2sdp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/purple"
+            app:errorIconTint="@color/errorColor"
+            app:errorTextColor="@color/errorColor"
+            app:hintTextColor="@color/purple"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli_semibold"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/forgotUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remittance_code"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_black"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Transaction reference number*"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reCaptcha"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotUsername"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="reCAPTCHA"
+            android:textColorHint="@color/purple"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeErrorColor="@color/errorColor"
+            app:boxStrokeWidthFocused="@dimen/_2sdp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/purple"
+            app:errorIconTint="@color/errorColor"
+            app:errorTextColor="@color/errorColor"
+            app:hintTextColor="@color/purple"
+            app:startIconDrawable="@drawable/ic_protect"
+            app:startIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli_semibold"
+                android:inputType="number|text"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/pinPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reCaptcha"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_black"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Type what you see ↓"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@id/pinPlaceholder"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/light_purple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <test.jinesh.captchaimageviewlib.CaptchaImageView
+                    android:id="@+id/reCVaptchaImage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/refreshCaptcha"
+                    android:layout_width="0dp"
+                    android:src="@drawable/ic_refresh"
+                    app:tint="@color/purple"
+                    android:tooltipText="Refresh reCaptcha code"
+                    android:padding="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:backgroundTint="@color/purple"
+            android:elevation="@dimen/_8sdp"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_12sdp"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

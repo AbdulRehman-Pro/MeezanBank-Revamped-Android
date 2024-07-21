@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    android:scrollbarSize="0dp"
+    android:transitionName="transition_signUp"
+    tools:context=".beforeAuth.fragments.loginForgot.CodeVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_black"
+            android:includeFontPadding="false"
+            android:text="CO\nDE"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_50sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_semibold"
+            android:includeFontPadding="false"
+            android:text="VERIFICATION"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/purple" />
+
+        <TextView
+            android:id="@+id/detailAndNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/muli"
+            android:includeFontPadding="false"
+            android:text="@string/passcode_has_been_sent"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_otp"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/muli_black"
+            android:inputType="phone"
+            android:itemBackground="@color/light_purple"
+            android:textColor="@color/purple"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemHeight="@dimen/_50sdp"
+            app:itemRadius="@dimen/_5sdp"
+            app:itemWidth="@dimen/_50sdp"
+            app:lineColor="@color/purple" />
+
+        <TextView
+            android:id="@+id/otpTimeResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/muli_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/passcode_expires_in"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/light_purple"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="@dimen/_2sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli_black"
+                android:padding="@dimen/_10sdp"
+                android:text="Resend Passcode"
+                android:textAlignment="center"
+                android:textColor="@color/purple" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/detailNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/muli"
+            android:includeFontPadding="false"
+            android:justificationMode="inter_word"
+            android:text="@string/passcode_note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:weightSum="4">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                app:cardBackgroundColor="@color/light_purple"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:strokeColor="@color/purple"
+                app:strokeWidth="@dimen/_2sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Send SMS to 9060"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/light_purple"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:strokeColor="@color/purple"
+                app:strokeWidth="@dimen/_2sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli_black"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Send SMS to 8079"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

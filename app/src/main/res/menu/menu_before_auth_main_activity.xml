@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_user"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_products"
+            android:title="Products" />
+        <item
+            android:id="@+id/nav_locale"
+            android:icon="@drawable/ic_locale"
+            android:title="Locale" />
+        <item
+            android:id="@+id/nav_discounts"
+            android:icon="@drawable/ic_discounts"
+            android:title="Discounts" />
+        <item
+            android:id="@+id/nav_qibla"
+            android:icon="@drawable/ic_qibla"
+            android:title="Qibla" />
+        <item
+            android:id="@+id/nav_hru"
+            android:icon="@drawable/ic_hru"
+            android:title="HRU" />
+
+        <item
+            android:id="@+id/more"
+            android:title="More">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_guide"
+                        android:icon="@drawable/ic_guide"
+                        android:title="User Guide" />
+                    <item
+                        android:id="@+id/nav_faq"
+                        android:icon="@drawable/ic_faq"
+                        android:title="FAQ's" />
+
+                </group>
+            </menu>
+        </item>
+
+
+    </group>
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="Contact Us" />
+</menu>

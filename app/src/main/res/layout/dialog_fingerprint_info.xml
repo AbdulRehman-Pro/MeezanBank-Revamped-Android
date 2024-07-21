@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_30sdp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fingerprint_meezan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/animationView"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/muli_black"
+        android:text="Place your finger on your phones fingerprint sensor."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+
+</RelativeLayout>

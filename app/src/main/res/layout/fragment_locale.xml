@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".beforeAuth.fragments.localeFragment.LocaleFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/locationCityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/light_purple"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:rippleColor="@color/purple"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/locationCity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/muli_black"
+                android:padding="@dimen/_5sdp"
+                android:text="City"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/_10sdp"
+                app:drawableEndCompat="@drawable/ic_arrow_down"
+                app:drawableTint="@color/purple" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/black" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="@dimen/_30sdp"
+            android:foregroundGravity="center_vertical"
+            android:requiresFadingEdge="horizontal"
+            android:scrollbarSize="0dp"
+            android:scrollbars="horizontal">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:selectionRequired="true"
+                android:layout_gravity="center_vertical"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/nearbyChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:checked="true"
+                    android:text="Nearby"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:checkedIconEnabled="false"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/branchChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="Branch"
+                    android:checked="true"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/branchAvailableChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="Branch Availability (COVID-19)"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/atmChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="ATM"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/saturdayOpenCChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="Saturday Open"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/premiumBankChip"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="Premium Banking Center"
+                    android:textAppearance="@style/chipTextAppearence"
+                    app:chipEndPadding="@dimen/_15sdp"
+                    app:chipStartPadding="@dimen/_15sdp"
+                    app:ensureMinTouchTargetSize="false" />
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

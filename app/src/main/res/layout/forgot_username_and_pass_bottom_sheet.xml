@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgotscreen_rounded_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".beforeAuth.fragments.loginForgot.ForgotUsernameAndPassBottomSheet">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Forgot"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:fontFamily="@font/muli_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@color/purple" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="Debit Card Number"
+            android:textColorHint="@color/purple"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeErrorColor="@color/errorColor"
+            app:boxStrokeWidthFocused="@dimen/_2sdp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/purple"
+            app:errorIconTint="@color/errorColor"
+            app:errorTextColor="@color/errorColor"
+            app:counterMaxLength="16"
+            app:hintTextColor="@color/purple"
+            app:startIconDrawable="@drawable/ic_card"
+            app:startIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli_semibold"
+                android:maxLength="16"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/forgotUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_black"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Enter 16 digits debit card number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotUsername"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="ATM Pin"
+            android:textColorHint="@color/purple"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_5sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+            app:boxCornerRadiusTopStart="@dimen/_5sdp"
+            app:boxStrokeColor="@color/purple"
+            app:boxStrokeErrorColor="@color/errorColor"
+            app:boxStrokeWidthFocused="@dimen/_2sdp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/purple"
+            app:errorIconTint="@color/errorColor"
+            app:errorTextColor="@color/errorColor"
+            app:hintTextColor="@color/purple"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:maxLength="4"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli_semibold"
+                android:inputType="numberPassword"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/pinPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/muli_black"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Enter 4 digits ATM pin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinPlaceholder"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:backgroundTint="@color/purple"
+            android:elevation="@dimen/_8sdp"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_12sdp"
+            android:text="next"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

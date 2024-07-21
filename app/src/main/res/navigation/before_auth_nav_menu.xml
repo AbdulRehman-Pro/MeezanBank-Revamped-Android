@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.productFragment.ProductsFragment"
+        tools:layout="@layout/fragment_products" />
+
+
+    <fragment
+        android:id="@+id/nav_locale"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.localeFragment.LocaleFragment"
+        tools:layout="@layout/fragment_locale" />
+
+    <fragment
+        android:id="@+id/nav_discounts"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.DiscountsFragment"
+        tools:layout="@layout/fragment_discounts" />
+
+    <fragment
+        android:id="@+id/nav_qibla"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.qiblaFragment.QiblaFragment"
+        tools:layout="@layout/fragment_qibla" />
+
+    <fragment
+        android:id="@+id/nav_hru"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.HomeRemittanceFragment"
+        tools:layout="@layout/fragment_home_remittance" />
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.UserGuideFragment"
+        tools:layout="@layout/fragment_user_guide" />
+
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="invo8.meezan.mb.beforeAuth.fragments.FaqsFragment"
+        tools:layout="@layout/fragment_faqs" />
+
+</navigation>

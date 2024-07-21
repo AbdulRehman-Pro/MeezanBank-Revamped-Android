@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".beforeAuth.fragments.qiblaFragment.QiblaFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_70sdp"
+        app:cardBackgroundColor="@color/light_purple"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:strokeColor="@color/purple"
+        app:strokeWidth="@dimen/_2sdp">
+
+        <TextView
+            android:id="@+id/locationDirection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_8sdp"
+            android:text="00.00"
+            android:textAlignment="center"
+            android:textColor="@color/purple" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/qiblaDirection"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qibla_direction" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/locationAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/light_purple"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:strokeColor="@color/purple"
+        app:strokeWidth="@dimen/_2sdp">
+
+        <TextView
+            android:id="@+id/locationCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muli_black"
+            android:padding="@dimen/_8sdp"
+            android:text="00.00 , 00.00"
+            android:textAlignment="center"
+            android:textColor="@color/purple" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/locationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="@dimen/_20sdp"
+        android:fontFamily="@font/muli_black"
+        android:includeFontPadding="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:requiresFadingEdge="horizontal"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Location"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+
+</RelativeLayout>

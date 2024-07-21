@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/light_purple"
+    android:effectColor="@color/purple"
+    tools:targetApi="s">
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@android:color/white" />
+</ripple>

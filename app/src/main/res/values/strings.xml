@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meezan Bank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="passcode_has_been_sent">Passcode has been sent on your registered mobile number: </string>
+    <string name="passcode_note">Note: If your mobile network is changed (MNP), kindly send a message "MNP" to 9060 or 8079 or simmply press the options below.</string>
+    <string name="passcode_expires_in">Passcode expires in :</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".beforeAuth.fragments.productFragment.ProductsFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/muli_black"
+        android:text="Apply for our most popular products"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@color/black"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/_30sdp"
+        tools:listitem="@layout/item_products"
+        android:nestedScrollingEnabled="false"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarSize="0dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

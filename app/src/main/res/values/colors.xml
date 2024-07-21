@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#5f2485</color>
+    <color name="errorColor">#460000</color>
+    <color name="light_purple">#F6F0FA</color>
+    <color name="red">#E91E63</color>
+
+
+    //
+
+    <color name="deep_orange_700">#e64a19</color>
+    <color name="deep_orange_300">#ff8a65</color>
+    <color name="deep_orange_50">#fbe9e7</color>
+</resources>

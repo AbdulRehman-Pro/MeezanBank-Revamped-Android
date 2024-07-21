@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineSpotShadowColor="@color/purple"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    tools:context=".beforeAuth.BeforeAuthMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/content_before_auth_activity"
+            layout="@layout/content_before_auth_main_activity" />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:title="Meezan Bank"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/titleTextAppearence"
+            app:titleTextColor="@color/black" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
