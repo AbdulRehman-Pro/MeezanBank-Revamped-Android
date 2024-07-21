@@ -99,9 +99,13 @@ This project is a revamped UI of the old Meezan Bank app, providing a modern and
 
 ## Screenshots
 
-| New Splash Screen                      | Old Splash Screen                       |  New Menu Screen                        |  Old Menu Screen                    | 
-|----------------------------------------|-----------------------------------------|-----------------------------------------|-------------------------------------|
-|![New Splash Screen](art/splash_new.png)|![Old Splash Screen](art/splash_new.png)|![New Login Screen](art/splash_new.png)|![Old Login Screen](art/splash_new.png) |
+| New Splash Screen                      | Old Splash Screen                       |  New Menu Screen                    |  Old Menu Screen                    | 
+|----------------------------------------|-----------------------------------------|-------------------------------------|-------------------------------------|
+|![New Splash Screen](art/splash_new.png)|![Old Splash Screen](art/splash_old.jpg) |![New Menu Screen](art/menu_new.png) |![Old Menu Screen](art/menu_old.png) |
+
+| New Login Screen                      | Old Login Screen                       |  New Login Fingerprint Screen                    |  Old Login Fingerprint  Screen                    | 
+|----------------------------------------|-----------------------------------------|-------------------------------------|-------------------------------------|
+|![New Login Screen](art/login_new.png)|![Old Login Screen](art/login_old.jpg) |![New Login Fingerprint Screen](art/login_finger_new.png) |![Old Login Fingerprint](art/login_finger_old.jpg) |
 
 
 ---
