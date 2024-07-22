@@ -99,14 +99,44 @@ This project is a revamped UI of the old Meezan Bank app, providing a modern and
 
 ## Screenshots
 
-| New Splash Screen                      | Old Splash Screen                       |  New Menu Screen                    |  Old Menu Screen                    | 
-|----------------------------------------|-----------------------------------------|-------------------------------------|-------------------------------------|
-|![New Splash Screen](art/splash_new.png)|![Old Splash Screen](art/splash_old.jpg) |![New Menu Screen](art/menu_new.png) |![Old Menu Screen](art/menu_old.png) |
-
-| New Login Screen                      | Old Login Screen                       |  New Login Fingerprint Screen                    |  Old Login Fingerprint  Screen                    | 
-|----------------------------------------|-----------------------------------------|-------------------------------------|-------------------------------------|
-|![New Login Screen](art/login_new.png)|![Old Login Screen](art/login_old.jpg) |![New Login Fingerprint Screen](art/login_finger_new.png) |![Old Login Fingerprint](art/login_finger_old.jpg) |
-
+<table>
+  <tr>
+    <th>New Splash Screen</th>
+    <th>Old Splash Screen</th>
+    <th>New Menu Screen</th>
+    <th>Old Menu Screen</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="art/splash_new.png" width="200"></td>
+    <td align="center"><img src="art/splash_old.jpg" width="200"></td>
+    <td align="center"><img src="art/menu_new.png" width="200"></td>
+    <td align="center"><img src="art/menu_old.png" width="200"></td>
+  </tr>
+  <tr>
+    <th>New Login Screen</th>
+    <th>Old Login Screen</th>
+    <th>New Login Fingerprint Screen</th>
+    <th>Old Login Fingerprint Screen</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="art/login_new.png" width="200"></td>
+    <td align="center"><img src="art/login_old.jpg" width="200"></td>
+    <td align="center"><img src="art/login_finger_new.png" width="200"></td>
+    <td align="center"><img src="art/login_finger_old.jpg" width="200"></td>
+  </tr>
+  <tr>
+    <th>New Registration Screen</th>
+    <th>Old Registration Screen</th>
+    <th>New Product Screen</th>
+    <th>Old Product Screen</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="art/register_new1.png" width="200"></td>
+    <td align="center"><img src="art/register_old1.jpg" width="200"></td>
+    <td align="center"><img src="art/products_new.png" width="200"></td>
+    <td align="center"><img src="art/product_old.jpg" width="200"></td>
+  </tr>
+</table>
 
 ---
 
